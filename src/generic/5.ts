@@ -8,4 +8,14 @@ interface KeyValuePair {
   value;
 }
 
+function KeyValuePair<T, U>(key: T, value: U) {
+  return {
+    key,
+    value,
+  };
+}
+
+let pairOne = KeyValuePair(1, 'one');
+let pairTwo = KeyValuePair('two', 2);
+
 export {};

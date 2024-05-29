@@ -7,4 +7,8 @@
 //   return Object.assign(objA, objB);
 // }
 
-function
+function merge(objA: object, objB: object) {
+  return Object.assign(objA, objB);
+}
+
+export {};
