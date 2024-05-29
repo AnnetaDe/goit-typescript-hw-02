@@ -3,15 +3,15 @@
   
 */
 
-interface T {
+interface Prop {
   title: string;
 }
 
-class Component {
+class Component<T> {
   constructor(public props: T) {}
 }
 
-class Page extends Component {
+class Page extends Component<Prop> {
   pageInfo() {
     console.log(this.props.title);
   }
